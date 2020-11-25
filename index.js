@@ -25,7 +25,7 @@ async function run() {
   } else {
     const outputs = await updateCache();
     alfy.output(outputs);
-    alfy.cache.set('tokens', outputs, { maxAge: 10000 });
+    alfy.cache.set('tokens', outputs, { maxAge: 15000 });
   }
 }
 

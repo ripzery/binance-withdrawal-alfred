@@ -8,11 +8,50 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
+		<key>02383CFB-B681-4270-9415-0B695D2FB101</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>49C7336E-36CF-4333-B8CD-5B7A4505FE38</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>13FAD51F-03C6-4A41-8370-7600359A5344</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>02383CFB-B681-4270-9415-0B695D2FB101</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B67EFBC6-30DF-4334-BE45-A8D19599707B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>13FAD51F-03C6-4A41-8370-7600359A5344</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E5FD0C65-2B26-4106-B65D-24F5886C11B9</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>BBC8AAF1-DBD1-4067-873F-D2A95A81FD5D</string>
+				<string>B67EFBC6-30DF-4334-BE45-A8D19599707B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -35,25 +74,96 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node withdraw.js {query}</string>
-				<key>scriptargtype</key>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
 				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Enter amount...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node amount.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
+				<key>subtext</key>
+				<string>How many tokens to withdraw?</string>
+				<key>title</key>
+				<string>Enter amount</string>
 				<key>type</key>
-				<integer>7</integer>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>BBC8AAF1-DBD1-4067-873F-D2A95A81FD5D</string>
+			<string>13FAD51F-03C6-4A41-8370-7600359A5344</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node withdraw.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Withdraw</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>49C7336E-36CF-4333-B8CD-5B7A4505FE38</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -81,7 +191,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Fetching tokens from Binance..</string>
+				<string></string>
 				<key>script</key>
 				<string>./node_modules/.bin/run-node index.js "$1"</string>
 				<key>scriptargtype</key>
@@ -91,7 +201,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Withdraw token from Binance</string>
+				<string>Fetching tokens from Binance..</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -104,17 +214,78 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>token</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>B67EFBC6-30DF-4334-BE45-A8D19599707B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>token_amount</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>02383CFB-B681-4270-9415-0B695D2FB101</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>BBC8AAF1-DBD1-4067-873F-D2A95A81FD5D</key>
+		<key>02383CFB-B681-4270-9415-0B695D2FB101</key>
 		<dict>
 			<key>xpos</key>
-			<integer>415</integer>
+			<integer>635</integer>
 			<key>ypos</key>
-			<integer>185</integer>
+			<integer>210</integer>
+		</dict>
+		<key>13FAD51F-03C6-4A41-8370-7600359A5344</key>
+		<dict>
+			<key>xpos</key>
+			<integer>455</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
+		<key>49C7336E-36CF-4333-B8CD-5B7A4505FE38</key>
+		<dict>
+			<key>xpos</key>
+			<integer>730</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
+		<key>B67EFBC6-30DF-4334-BE45-A8D19599707B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>385</integer>
+			<key>ypos</key>
+			<integer>210</integer>
 		</dict>
 		<key>E5FD0C65-2B26-4106-B65D-24F5886C11B9</key>
 		<dict>
