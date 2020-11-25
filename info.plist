@@ -7,7 +7,21 @@
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>E5FD0C65-2B26-4106-B65D-24F5886C11B9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BBC8AAF1-DBD1-4067-873F-D2A95A81FD5D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>ripzery</string>
 	<key>description</key>
@@ -21,8 +35,31 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
+				<key>concurrently</key>
 				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node withdraw.js {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BBC8AAF1-DBD1-4067-873F-D2A95A81FD5D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
 				<key>argumenttreatemptyqueryasnil</key>
@@ -30,7 +67,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -44,7 +81,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>Fetching tokens from Binance..</string>
 				<key>script</key>
 				<string>./node_modules/.bin/run-node index.js "$1"</string>
 				<key>scriptargtype</key>
@@ -54,7 +91,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Withdraw funds from binance</string>
+				<string>Withdraw token from Binance</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -72,14 +109,30 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>BBC8AAF1-DBD1-4067-873F-D2A95A81FD5D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>415</integer>
+			<key>ypos</key>
+			<integer>185</integer>
+		</dict>
 		<key>E5FD0C65-2B26-4106-B65D-24F5886C11B9</key>
 		<dict>
 			<key>xpos</key>
 			<integer>230</integer>
 			<key>ypos</key>
-			<integer>120</integer>
+			<integer>185</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>API_KEY</key>
+		<string>abqpmY8Eli025TxvRyMwPMfXa7Ig2pOKQy8eRWeOj6kywZCj7MWBFtENuRCwJ1Ev</string>
+		<key>API_SECRET</key>
+		<string>8K4CXbcsYftfsx7vKNBBSl8wFkH57gUI513Zcz1dVhKuH72Opj2RbjLNkr8KlL0T</string>
+	</dict>
+	<key>version</key>
+	<string></string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
